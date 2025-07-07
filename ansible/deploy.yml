@@ -6,5 +6,4 @@
       shell: docker rm -f flask-cicd || true
 
     - name: Pull and run docker image
-      shell: docker run -d -p 5000:5000 --name flask-cicd flask-cicd
-
+      shell: docker run -d --name flask-app -p 5000:5000 fayaz3/flaskapp
